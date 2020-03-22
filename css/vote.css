@@ -1,0 +1,77 @@
+@charset "UTF-8";
+
+html,body,header,
+#intro {
+    height: 100%;
+}
+
+#intro {
+    background: url("../images/Voteback.jpg")no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.top-nav-collapse {
+  background-color: #3F729B;
+}
+@media (max-width: 768px) {
+  .navbar:not(.top-nav-collapse) {
+    background-color: #3F729B;
+  }
+}
+@media (min-width: 800px) and (max-width: 850px) {
+  .navbar:not(.top-nav-collapse) {
+    background-color: #3F729B;
+  }
+}
+.images img {
+    position: absolute;
+    z-index: -1;
+}
+.fade_off {
+    opacity: 0;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -o-transition: all 1s;
+    -ms-transition: all 1s;
+    transition: all 1s;
+}
+
+.fade_on {
+    opacity: 1;
+}
+.btn_vote {
+	position: absolute;
+	right: 22px;
+	bottom: 10px;
+	width: 50px;
+	height: 50px;
+	cursor: pointer;
+	background: #aaa url(../images/btn_heart.png) no-repeat center center;
+	background-size: 50px 50px;
+	border-radius: 25px;
+	transition: all 0.2s linear;
+	-webkit-tap-highlight-color:rgba(0,0,0,0);
+}
+
+.btn_vote.on {
+	background-color: #fd616b;
+	animation: anime_01 0.2s;
+}
+
+@keyframes anime_01 {
+	50% {
+		right: 12px;
+		bottom: 0px;
+		width: 70px;
+		height: 70px;
+		border-radius: 50px;
+	}
+}
+
+.ico_heart {
+  padding-left: 17px;
+	background: url(../images/ico_heart.jpg) no-repeat left center;
+	background-size: 15px 15px;
+}
